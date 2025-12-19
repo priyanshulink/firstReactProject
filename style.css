@@ -7,6 +7,48 @@ body{
     height: 100vh;
     width: 100vw;
 }
+
+/* Sidebar Styling */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5rem; 
+    z-index: 10;
+}
+
+#vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#vertical-line {
+    flex: 1;
+    width: 1px;
+    background: black;
+    margin: 30px 0;
+}
+
+#year-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
 #container{
     height: 80px;
     width: 100%;
@@ -20,6 +62,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    position: fixed;
 }
 
 #box1{
@@ -49,4 +92,30 @@ body{
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    padding-top: 6rem;
+    padding-left: 60px;
+}
+
+#rightbox{
+    height: 100%;
+    overflow: hidden;
+}
+#leftbox{
+    height: 100%;
+    width: auto;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+#headingone{
+  font-size: 2rem;
+}
+#helloheading{
+    font-size: 10rem;
+}
+
+#mainbox{
+    display: flex;
+    gap: 10rem;
 }
